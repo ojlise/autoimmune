@@ -1161,14 +1161,18 @@ const SITES = {rheum: ["RheumAtlas", "https://ojlise.github.io/rheumatology/#"],
          "ref"  reference only: {ref},
          "news" item with no condition page: {id:null, date, title, text, href}.
    ref is [title, url] of a page actually read. text is a plain sentence in your own words. */
-const SITE_UPDATED = "2026-11-25";
+const SITE_UPDATED = "2026-11-28";
 const WATCH = [
-["FDA decision on saroglitazar (PPAR α/γ agonist) for primary biliary cholangitis — action date Nov 27, 2026", "pbc"],
+["Povetacicept (investigational BAFF/APRIL blocker) for IgA nephropathy — FDA accelerated-approval decision due Nov 30, 2026", "igan"],
+["Saroglitazar for primary biliary cholangitis — FDA review continues after a Nov 2026 complete response letter tied to manufacturing-site observations; no new date announced", "pbc"],
+["Zasocitinib (investigational oral TYK2 inhibitor) for moderate to severe plaque psoriasis — FDA decision expected Q1 2027", "psoriasis"],
 ["Vedolizumab for children 2 and older with UC or Crohn's — FDA decision expected Q1 2027", "uc"],
 ["Ritlecitinib and upadacitinib for non-segmental vitiligo — regulatory submissions after positive 2026 phase 3 trials", "vitiligo"],
 ["Zimislecel (stem-cell–derived islets) for type 1 diabetes with severe hypoglycemia — 2026 filings planned", "t1d"]
 ];
-const WEEKLY = [];
+const WEEKLY = [
+{added:"2026-11-28", id:"pbc", kind:"upd", date:"2026-11-26", text:"The FDA did not approve saroglitazar for PBC by its Nov 27 target date. Zydus disclosed a complete response letter linked to unresolved inspection findings at its Moraiya manufacturing plant, not to the clinical trial data. The company says it is fixing the findings; no new decision date has been given, so saroglitazar remains investigational in the US.", ref:["Elets eHealth: Zydus saroglitazar gets USFDA complete response letter (Nov 27, 2026)","https://ehealth.eletsonline.com/2026/11/zydus-saroglitazar-usfda-crl/"]}
+];
 /* ===== WEEKLY-UPDATES-END ===== */
 const EXTRA_UPD = (IMP.ref.EXTRA_UPD || []).slice();
 
